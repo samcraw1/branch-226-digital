@@ -1,25 +1,15 @@
-import { Shield, Award, Users, Briefcase, Heart, Gavel, UserCheck } from 'lucide-react';
+import { Shield, Award, Users, Briefcase, Heart, Gavel } from 'lucide-react';
 
 const officers = [
-  { name: 'John Smith', title: 'President', icon: Shield },
-  { name: 'Maria Rodriguez', title: 'Vice President', icon: Award },
-  { name: 'David Johnson', title: 'Secretary', icon: Briefcase },
-  { name: 'Sarah Williams', title: 'Treasurer', icon: Briefcase },
-  { name: 'Michael Brown', title: 'HBR/MBA Rep', icon: Heart },
-  { name: 'Robert Davis', title: 'Director of Retirees', icon: UserCheck },
-  { name: 'Lisa Martinez', title: 'Sergeant-at-Arms', icon: Gavel },
-  { name: 'James Wilson', title: 'Trustee', icon: Users },
-  { name: 'Patricia Garcia', title: 'Trustee', icon: Users },
-  { name: 'Thomas Anderson', title: 'Trustee', icon: Users },
-  { name: 'Jennifer Lee', title: 'Trustee', icon: Users },
-  { name: 'Christopher Taylor', title: 'Trustee', icon: Users },
-  { name: 'Elizabeth Moore', title: 'Trustee', icon: Users },
-  { name: 'Daniel Jackson', title: 'National Business Agent', icon: Shield },
+  { name: 'Michael Barrett', title: 'President', icon: Shield },
+  { name: 'Christi Fite', title: 'Vice President', icon: Award },
+  { name: 'Doyle "Buck" Langston', title: 'Secretary', icon: Briefcase },
+  { name: 'Steven Vasquez', title: 'Treasurer', icon: Briefcase },
+  { name: 'Sharon Rucker', title: 'HBR/MBA Rep', icon: Heart },
+  { name: 'Miranda Miller', title: 'Dir. of Retirees', icon: Gavel },
 ];
 
 export function OfficersPreview() {
-  const previewOfficers = officers.slice(0, 6);
-
   return (
     <section className="py-16 md:py-24 bg-muted">
       <div className="container">
@@ -32,7 +22,7 @@ export function OfficersPreview() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {previewOfficers.map((officer, index) => (
+          {officers.map((officer, index) => (
             <div 
               key={officer.name}
               className="card-union p-6 flex items-center gap-4"
